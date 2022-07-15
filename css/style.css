@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Dancing+Script&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+/* 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 */
+
+
+#header{
+	background: moccasin;
+	display: grid;
+	height: 90px;
+	grid-template-columns: 30% 70%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#logo{
+	margin: 20px auto;
+}
+.numb{
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+/*<!-- DEBUT MENU1 -->*/
+
+
+#menu > ul{
+	padding: 0;
+	background: moccasin;
+	padding: 0px;
+	margin: 35px auto;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+#menu > ul > li{
+	list-style-type: none;
+	margin: 0 auto;
+}
+
+#menu > ul > li > a{
+
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+}
+
+#menu > ul > li > a:hover{
+		color: #37332c;
+		background: #ffdb9b;
+		transition: 0.3s;
+}
+
+@media all and (max-width: 1000px){
+	#menu > ul{
+		padding: 0;
+		font-size: 1rem;
+		text-transform: uppercase;
+	}
+
+	 #menu-2 > ul{
+	 	font-size: 1.2rem;
+	 }
+
+
+}
+/*<!-- FIN MENU1-->*/
+
+
+/*<!-- DEBUT MENU-2 -->*/
+#menu-2{
+	z-index: 100;
+	text-align: center;
+	width: 70%;
+	height: 190px;
+}
+#menu-2 > div > ul{
+	height: 190px;
+	background: moccasin;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 100%;
+	font-size: 1.3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+}
+
+
+#menu-2 > div > ul > li{
+	list-style-type: none;
+	margin: 0;
+	padding-top: 20px;
+	background: #d8af68;
+	opacity: 0.7;
+	border-radius: 30px;
+
+}
+
+#menu-2 > div > ul > li > a{
+	text-decoration: none;
+	color: black;
+}
+
+#menu-2 > div > ul > li > a:hover{
+		color: #37332c;
+		background: #ffdb9b;
+		transition: 0.3s;
+}
+
+@media all and (max-width: 1000px){
+
+	 #menu-2 > ul{
+	 	font-size: 1.2rem;
+	 }
+}
+
+#menu-bonbon{
+	visibility: hidden;
+	position: absolute;
+	top: 30px;
+	right: 60px;
+}
+
+
+
+@media all and (max-width: 600px){
+
+	#menu > ul{
+			visibility: hidden;
+		}
+
+	#menu-2{
+		text-align: center;
+		width: 90%;
+		height: 190px;
+		visibility: hidden;
+	}
+
+		#menu-2 > div > ul{
+		font-size: 1rem;
+		text-transform: uppercase;
+
+	}
+
+
+	 #menu-bonbon{
+		visibility: visible;
+	}
+
+}
+
+
+/*<!-- FIN MENU-2 -->*/
+
+/* 22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 */
+
+/*<!-- DEBUT MAIN-->*/
+
+.imagesMasquees{
+	display: none;
+}
+
+.slider{
+	margin-bottom: 130px;
+	height: 50vh;
+	position: relative;
+}
+
+.slider img{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.slider img.active{
+	opacity: 1;
+	transition: 0.9s;
+}
+
+.suivant, .precedent{
+	color:  #ffa726;
+	font-size: 3rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+
+}
+
+.suivant{
+	right: 1rem;
+}
+
+.precedent{
+	left: 1rem;
+}
+
+.titre-de-nos-produits{
+	margin-top: 20px;
+	text-decoration: overline;
+	font-family: 'Dancing Script', Curcive;
+	font-size: 2.9rem;
+	font-weight: 700;
+}
+
+.titre-de-nos-produits::first-letter{
+	text-transform: uppercase;
+}
+
+.produits{
+	text-align: center;
+	width: 100%;
+}
+
+
+
+.bloc-produits{
+	margin-bottom: 100px;
+	width: 100%;
+	padding-top: 40px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.titre-et-produit{
+	width: 27%;
+	background: moccasin;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	box-shadow: 5px 5px 5px #52504e;
+
+}
+
+.titre-et-produit:hover{
+	background: #f5d6a1;
+	transition: 0.9s;
+	box-shadow: 5px 5px 5px #52504e;
+	cursor: pointer;
+}
+
+.titre-produit{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+@media all and (max-width: 1000px){
+	.titre-de-nos-produits{
+		font-size: 2.1rem;
+	}
+		.titre-produit{
+		font-size: 1.2rem;
+	}
+}
+
+@media all and (max-width: 600px){
+	.titre-de-nos-produits{
+		font-size: 1.6rem;
+	}
+
+		.titre-produit{
+		font-size: 1rem;
+		font-family: 'Dancing Script', Curcive;
+	}
+}
+
+#autre-produit{
+	border-top: 6px solid moccasin;
+	border-bottom: 6px solid moccasin;
+	text-align: center;
+	font-size: 3rem;
+	width: 100%;
+	height: 440px;
+	font-family: 'Dancing Script', Curcive;
+	/*background: moccasin;*/
+}
+
+#autre-produit,#about{
+	text-align: center;
+	font-size: 3rem;
+}
+
+#baniere-defilant{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	/*background: moccasin;*/
+}
+
+#image-centrale{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -70%);
+}
+
+#fleche-gauche{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-250%, -150%);
+	opacity: 0.4;
+}
+
+#fleche-droite{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(150%, -150%);
+	opacity: 0.4;
+
+}
+
+.about-etautre-produit{
+	font-family: 'Dancing Script', Curcive;
+
+}
+
+
+#about-et-image{
+	margin-top: 0px;
+	background: moccasin;
+}
+
+#contenaire-image-apropos{
+	margin: 0 auto;
+	padding-bottom: 100px;
+	text-align: justify;
+	width: 40%;
+}
+
+#img{
+	padding: 20px;
+	float: right;
+}
+
+
+@media all and (max-width: 780px){
+	#contenaire-image-apropos{
+		display: flex;
+		text-align: justify;
+		width: 90%;
+	}
+}
+
+@media all and (max-width: 700px){
+	#contenaire-image-apropos{
+		display: flex;
+		flex-direction: column;
+		text-align: justify;
+		width: 90%;
+	}
+
+	#img{
+		margin: 0 auto;
+	}
+}
+
+@media all and (max-height: 700px){
+
+	#about-et-image{
+
+		margin-top: 10px;
+	}
+
+	#menu-2 > div > ul{
+		font-size: 0.5rem;
+	
+	}
+
+		#menu-2 > div > ul{
+		height: 90px;
+		
+	}
+
+		#menu-2 > div > ul > li{
+		padding-top: 5px;
+
+	}
+}
+
+
+#footer{
+	display: flex;
+	justify-content: space-evenly;
+	height: 100px;
+	
+}
+
+#icones-footer{
+
+	padding: 5px;
+}
+
+
+
+/*<!-- FIN MAIN-->*/

@@ -1,0 +1,24 @@
+x/*---------------------------------------DEBUT PARTIE MAIN---------------------------------------*/
+@media all and (max-width: 727px){
+		#section1{
+		padding:  20px 80px 80px 80px;
+		background: moccasin;
+	}
+
+		.img-left{
+		padding-right: 50%;
+	}
+
+		#section1,#section2,#section3{
+		width: 100%;
+	}
+
+	.img-right{
+		padding-left: 50%;
+	}
+
+}
+
+
+
+/*---------------------------------------FIN PARTIE MAIN---------------------------------------*/

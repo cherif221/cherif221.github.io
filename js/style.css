@@ -1,0 +1,15 @@
+
+nav > div > ul{
+	visibility: hidden;
+}
+
+
+.show{
+	visibility: visible;
+}
+
+/****************************************************DEBUT BANIERE BOTTOM**********************************************/
+
+let img_slider = document.getElementByClassName('img_slider');
+
+/****************************************************FIN BANIERE BOTTOM**********************************************/
